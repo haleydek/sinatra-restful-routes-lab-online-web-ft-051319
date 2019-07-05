@@ -7,5 +7,10 @@ class ApplicationController < Sinatra::Base
   get '/recipes/new' do
     erb :new
   end
+  
+  post '/recipes' do
+    
+    erb :"recipes/#{@recipe.id}"
+  end
 
 end
