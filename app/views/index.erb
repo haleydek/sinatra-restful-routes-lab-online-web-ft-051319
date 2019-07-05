@@ -4,10 +4,10 @@
     <h1>All Recipes</h1>
   </head>
   <body>
-    <ol>
       <% @recipes.each do |recipe| %>
+        <ol>
           <li><a href='recipes/<% recipe.id %>'>Enchilada</a></li>
+        </ol>
       <% end %>
-    </ol>
   </body>
 </html>
